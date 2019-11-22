@@ -1,5 +1,7 @@
 package usefulInfo;
 
+import java.util.Arrays;
+
 public class TestTest {
     public void mQ(int i){
         System.out.println("mQ"+i);
@@ -42,9 +44,11 @@ class   TestTest5 extends TestTest {
 //        c.readPassword()
 //        System.out.println("password is " + pwd); //4
 
-//        int[] a = { 1, 2, 3, 4 };
-//        int[] b = { 2, 3, 1, 0 };
-//        System.out.println( a [ (a = b)[3] ] );
+        int[] a = { 1, 2, 3, 4 };
+        int[] b = { 2, 3, 1, 0 };
+        System.out.println( a [ (a = b)[3] ] );
+        double a1 = 5.0;
+        System.out.println( a1 / 3);
 
 //        int i = 0;
 //        char ch = 'a';
@@ -59,14 +63,16 @@ class   TestTest5 extends TestTest {
 ////        i = Integer.parseInt(""+ch);
 
 
-       // String[] sA = {new String( "aaa")};
-        String[] sA = { "aaa"};
+//        String[] sA = {new String( "aaa")};
+//        String[] sA = {"aaa"};
+//        System.out.println(Arrays.toString(sA));
 
 
-        int size = 10;
-        int[] arr = new int[size];
-        for (int i = 0 ; i < size ; ++i)
-            System.out.println(arr[i]);
+//        int size = 10;
+//        int[] arr = new int[size];
+//        System.out.println(Arrays.toString(arr));
+//        for (int i = 0 ; i < size ; ++i)
+//            System.out.println(arr[i]);
 
 
     }
@@ -77,6 +83,7 @@ class   TestTest5 extends TestTest {
 
 }
 
+/*
 class TestClass
 {
     static boolean b;
@@ -85,6 +92,8 @@ class TestClass
     static boolean[] ba = new boolean[1];
     public static void main(String args[]) throws Exception
     {
+        System.out.println(ch);
+        System.out.println(ba[ch]);
         boolean x = false;
         if( b )
         {
@@ -93,4 +102,4 @@ class TestClass
         else x = ( ba[ch] = b );
         System.out.println(x+" "+ba[ch]);
     }
-}
+}*/
